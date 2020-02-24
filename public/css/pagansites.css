@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+.ps-navbar {
+    overflow: hidden;
+    background-color: #100007;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999999999;
+    font-family: 'Montserrat', serif;
+    opacity: 0.8;
+}
+
+.ps-navbar a {
+    float: left;
+    display: block;
+    color: #EAEAEA !important;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.ps-navbar a:hover {
+    background: #EAEAEA;
+    color: black !important;
+}
+
+.ps-navbar a.active {
+    background-color: #830303;
+    color: #EAEAEA;
+}
+
+.ps-navbar a.active:hover {
+    color: #EAEAEA !important;
+    background-color: #E22424;
+}
+.ps-navbar span {
+    vertical-align: middle;
+    text-align: center;
+    color: #CCC9A1;
+    font-size: 13px;
+    margin-left:20px;
+}
+
+.ps-navbar .fas {
+    color: #EAEAEA;
+}
+
+.ps-navbar img {
+    float:right;
+    vertical-align: middle;
+    margin-left:20px;
+    margin-top:8px;
+    margin-bottom:8px;
+    margin-right: 6px;
+    width: 150px;
+}
+
+.ps-post-container {
+    color: #14080E;
+}
+
+.ps-post-container img {
+    width: 100%;
+    height: auto;
+}
+
+.ps-post-container p {
+    color: #14080E;
+}
+
+.ps-post-container hr {
+    border: 1px solid #14080E;
+}
+
+.ps-search-container {
+    display: inline;
+}
+.ps-search-container button {
+    background-color: #830303;
+    border: none;
+    color: #EAEAEA;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    width: 100%;
+}
+
+.ps-search-container button:hover {
+    background-color: #E22424;
+    border: none;
+    color: #EAEAEA;
+}
+
+.ps-search-container input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.ps-card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.ps-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.ps-card-container {
+    padding: 2px 16px;
+}
+
+.wu-content-plan .plan-tier .early-adopter-price {
+    color: #834655 !important;
+}
+
+.slider-image-left {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+/*
+.ps-post-container .column {
+    float: left;
+    width: 33%;
+    display: table-cell;
+}
+
+.ps-post-container .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+}
+*/
+
+@media only screen and (max-width: 600px) {
+    .ps-post-container .column {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Peepso Stuff */
+.dotless-list li {
+    list-style-type: none !important;
+}
+
+
+.peepso * {
+    font-family: 'Montserrat', serif !important;
+}
+
+/* new post grid */
+.rposts-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.rposts-column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.rposts-column .ps-post-container {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .rposts-column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .rposts-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Fix links */
+a {
+    color: #834655;
+}
+
+a:visited {
+    color: #834655;
+}
+
+a:hover, a:focus, a:active {
+    color: #834655;
+}
+
+body {
+    overflow-x: hidden;
+}
